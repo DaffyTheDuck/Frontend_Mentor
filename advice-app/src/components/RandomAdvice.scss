@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+.advice-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    position: relative;
+
+    .advice-number {
+        font-size: 1rem;
+        color: hsl(150, 100%, 66%);
+        font-family: inherit;
+        letter-spacing: 5px;
+        font-weight: 800;
+        margin: 20px 0 15px 0;
+    }
+
+    .advice-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .advice {
+            font-size: 28px;
+            font-weight: 800;
+            color: hsl(193, 38%, 86%);
+            word-wrap: break-word;
+            width: 440px;
+            text-align: center;
+            margin: 0 50px 0 50px;
+        }
+    }
+
+    .divider-image-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+
+        .divider-image {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+    }
+
+    .dice-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: hsl(150, 100%, 66%);
+        z-index: 2;
+        position: absolute;
+        top: 92%;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 1;
+            background-color: hsl(150, 100%, 66%);
+            box-shadow: 0 10px 60px hsl(150, 100%, 66%)
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .advice-card {
+
+        .advice-number {
+            font-size: 0.8rem;
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+
+        .advice-div {
+            .advice {
+            font-size: 23px;
+            font-weight: 800;
+            color: hsl(193, 38%, 86%);
+            word-wrap: break-word;
+            width: 290px;
+            text-align: center;
+            margin: 0 30px 0 30px;
+            }
+        }
+
+        .divider-image-div {
+            
+            .divider-image {
+                content: url('../assets//pattern-divider-mobile.svg');
+            }
+        }
+    }
+}
