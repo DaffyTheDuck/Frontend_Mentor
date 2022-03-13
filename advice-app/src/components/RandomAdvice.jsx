@@ -34,7 +34,7 @@ export default function RandomAdvice() {
                 <div className='divider-image-div'>
                     <img src={divider} alt="desktop-divider" className='divider-image'/>
                 </div>
-                <div className="dice-container">
+                <div className="dice-container" onClick={fetchAdvice}>
                     <img src={dice} alt="dice" onClick={fetchAdvice}/>
                 </div>
             </Card>
