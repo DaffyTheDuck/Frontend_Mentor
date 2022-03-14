@@ -7,7 +7,7 @@ import dice from '../assets/icon-dice.svg';
 
 export default function RandomAdvice() {
 
-    const [advice, setAdvice] = useState('Hit To Get A Random Advice.');
+    const [advice, setAdvice] = useState('Your Advice Is Loading...');
     const [adviceNumber, setAdviceNumber] = useState(0);
 
     const ADVICE_API_URL = 'https://api.adviceslip.com/advice';
@@ -15,10 +15,22 @@ export default function RandomAdvice() {
     // fetching advice using axios
 
     const fetchAdvice = async () => {
-        const response = await axios.get(ADVICE_API_URL);
-        setAdvice(response.data.slip.advice);
-        setAdviceNumber(response.data.slip.id);
+        const res = await axios.get(ADVICE_API_URL, {
+            cache: 'no-cache'
+        }).then(
+            res => {
+                setAdvice(res.data.slip.advice);
+                setAdviceNumber(res.data.slip.id);
+            }
+        ).catch((err) => {
+            console.log(err);
+        });
     }
+
+    // to load a quote when site loads
+    useEffect(() => {
+        fetchAdvice();
+    }, []);
 
     return (
         <>
