@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+.app-parent {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  font-family: 'Rubik', sans-serif;
+
+  .top-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+    background-image: url('./assets/pattern-bg.png');
+    background-size: cover;
+
+    .title {
+      text-align: center;
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 2rem;
+      color: snow;
+      margin-top: 50px
+
+    }
+  }
+
+  .leaflet-container {
+    width: 100%;
+    height: 70vh;
+    z-index: 0;
+  }
+
+  // .test-div-2 {
+  //   background-color: red;
+  //   min-height: 70vh;
+  // }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .app-parent {
+    min-width: 100vw;
+    .top-div {
+      height: 30vh;
+      .title {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .app-parent {
+    min-width: 100vw;
+    .top-div {
+      height: 40vh;
+      .title {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+.input-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 10px;
+    z-index: 1;
+
+    .input-field {
+        width: 30%;
+        padding: 20px;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        border: none;
+        font-size: 18px;
+        color: hsl(0, 0%, 17%);
+        font-family: inherit;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:focus::placeholder {
+            color: white
+        }
+    }
+
+    .search-button {
+        justify-content: center;
+        width: 4%;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        background-color: hsl(0, 0%, 17%);
+        border: none;
+        color: white;
+        font-size: 18px;
+        font-family: inherit;
+        cursor: pointer;
+        padding: 20px;
+
+        &:focus {
+            background-color: hsl(0, 0%, 17%);
+        }
+    }
+}
+
+.info-card {
+    z-index: 2;
+}
+
+@media only screen and (max-width: 1235px) {
+    .input-div {
+        width: 100%;
+
+        .search-button {
+            width: 5%;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .input-div {
+        width: 100%;
+        .input-field {
+            width: 75%;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:focus::placeholder {
+                color: white
+            }
+
+            &::placeholder {
+                font-size: 1rem;
+            }
+        }
+
+        .search-button {
+            width: 15%;
+        }
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .input-div {
+        width: 100%;
+        .input-field {
+            width: 70%;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:focus::placeholder {
+                color: white
+            }
+
+            &::placeholder {
+                font-size: 1rem;
+            }
+        }
+
+        .search-button {
+            width: 7%;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1040px) {
+    .input-div {
+        width: 100%;
+        .input-field {
+            width: 70%;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:focus::placeholder {
+                color: white
+            }
+
+            &::placeholder {
+                font-size: 1rem;
+            }
+        }
+
+        .search-button {
+            width: 8%;
+        }
+    }
+}
+
