@@ -1,0 +1,285 @@
+.ip_info_div {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+    margin: -5% 35%;
+    position: absolute;
+    padding: 20px 120px 50px 30px;
+    justify-content: center;
+    border-radius: 25px;
+
+    .vertical-line {
+        border-left: 1px solid hsl(0, 0%, 59%);
+        height: 70px;
+        margin-top: 20px;
+    }
+
+    .ip_address {
+        display: inline-block;
+        // flex-direction: column;
+        margin-right: 50px;
+
+        p {
+            color: hsl(0, 0%, 59%);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .ip_add {
+            color:hsl(0, 0%, 17%);
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+    }
+
+    .ip_location {
+        margin-right: 5px;
+        margin-left: 30px;
+        min-width: 300px;
+
+
+        p {
+            color: hsl(0, 0%, 59%);
+            margin-bottom: 20px;
+            // margin-top: 5px;
+            font-weight: 700;
+        }
+
+        .address {
+            color:hsl(0, 0%, 17%);
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+    }
+
+    .ip_timezone {
+        margin-right: 50px;
+        margin-left: 30px;
+
+        p {
+            color: hsl(0, 0%, 59%);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .tz {
+            color:hsl(0, 0%, 17%);
+            font-weight: 700;
+            font-size: 1.5rem;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    }
+
+    .ip_isp {
+        margin-left: 30px;
+        min-width: 250px;
+        p {
+            color: hsl(0, 0%, 59%);
+            margin-bottom: 20px;
+            // margin-top: 25px;
+            font-weight: 700;
+        }
+
+        .isp {
+            color:hsl(0, 0%, 17%);
+            font-weight: 700;
+            font-size: 1.5rem;
+            width: 200px;
+        }
+    }
+}
+
+@media (max-width: 1140px) {
+    .ip_info_div {
+        display: flex;
+        flex-direction: column;
+        margin: -5%;
+        padding: 20px 30px 50px 30px;
+        width: 60%;
+        opacity: 0.92;
+
+        .vertical-line {
+            height: 0px;
+        }
+
+        .ip_address {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+        }
+
+        .ip_location {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            min-width: 0px;
+        }
+
+        .ip_timezone {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+        }
+
+        .ip_isp {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            min-width: 0px;
+        }
+    }
+}
+
+@media (max-width: 740px) {
+    .ip_info_div {
+        flex-direction: column;
+        margin: -17%;
+        padding: 20px 30px 50px 30px;
+        width: 90%;
+
+        .vertical-line {
+            height: 0px;
+        }
+
+        .ip_address {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+        }
+
+        .ip_location {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            min-width: 0px;
+        }
+
+        .ip_timezone {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+        }
+
+        .ip_isp {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            min-width: 0px;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .ip_info_div {
+        flex-direction: column;
+        margin: -22%;
+        padding: 20px 30px 50px 30px;
+        width: 90%;
+        font-size: 1rem;
+
+        .vertical-line {
+            height: 0px;
+        }
+
+        .ip_address {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+
+            .ip_add {
+                font-size: 1.2rem;
+            }
+        }
+
+        .ip_location {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            min-width: 0px;
+
+            .address {
+                font-size: 1.2rem;
+            }
+        }
+
+        .ip_timezone {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+
+            .tz {
+                font-size: 1.2rem;
+            }
+        }
+
+        .ip_isp {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            min-width: 0px;
+
+            .isp {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .ip_info_div {
+        flex-direction: column;
+        margin: -25%;
+        padding: 20px 30px 50px 30px;
+        width: 90%;
+        // height: 55%;
+
+        .vertical-line {
+            height: 0px;
+        }
+
+        .ip_address {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+        }
+
+        .ip_location {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            min-width: 0px;
+        }
+
+        .ip_timezone {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+        }
+
+        .ip_isp {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            min-width: 0px;
+        }
+    }
+}
