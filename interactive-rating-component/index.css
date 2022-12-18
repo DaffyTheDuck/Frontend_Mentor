@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.parent-div {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+}
+
+.card-div {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background-color: hsl(213, 19%, 18%);
+    padding: 3rem;
+}
+
+.star-image {
+    display: flex;
+    background-color: hsla(216, 12%, 54%,0.2);
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+    height: 45px;
+    width: 45px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.message {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+}
+
+.long-message {
+    color: white;
+    font-size: 15px;
+    margin-bottom: 35px;
+    width: 22rem;
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+button {
+    display: flex;
+    background-color: hsla(216, 12%, 54%,0.2);
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 20px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    color: hsl(217, 12%, 63%);
+    font-family: 'Overpass', sans-serif;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+button:focus {
+    background-color: hsl(216, 12%, 54%);
+    color: white;
+}
+
+#submit-button {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 30px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 0px;
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: 5px;
+}
+
+#submit-button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+@media screen and (max-width: 480px) {
+
+    .parent-div {
+        overflow-x: hidden;
+    }
+
+    .card-div {
+        padding: 3rem;
+        width: 90vw;
+        padding: 1.5rem;
+    }
+
+    .long-message {
+        width: 19rem;
+        justify-content: center;
+    }
+}
